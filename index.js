@@ -46,7 +46,7 @@ mb.on("ready", () => {
 
 function frame() {
     for (let i = 0; i < 12; i++) {
-        let file = path.join(__dirname, "resources", "mhxy_five_" + `${i}`.padStart(2, "0") + ".png");
+        let file = path.join(__dirname, "images", "mhxy_five_" + `${i}`.padStart(2, "0") + ".png");
         setTimeout(() => mb.tray.setImage(file), playTime * (i + 1));
     }
 
